@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dashboard - Bootstrap Admin Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600"
+        rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pages/dashboard.css" rel="stylesheet">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </a><a class="brand" href="index.html">血液透析整體服務資訊平台 beta</a>
+      <div class="nav-collapse">
+        <ul class="nav pull-right">
+          <li class="dropdown"  style="display:none"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                            class="icon-cog"></i> 帳號 <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="javascript:;">設定</a></li>
+              <li><a href="javascript:;">使用說明</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                            class="icon-user"></i> Jade Freeman <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="javascript:;">系統設定</a></li>
+              <li><a href="javascript:;">個人基本資訊</a></li>
+              <li><a href="javascript:;">登出</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /navbar-inner -->
+</div>
+<!-- /navbar -->
+<div class="subnavbar">
+  <div class="subnavbar-inner">
+    <div class="container">
+      <ul class="mainnav">
+        <li class="active dropdown"><a href="index.html"><i class="icon-dashboard"></i><span>回首頁</span> </a> </li>
+        <li class="dropdown"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-list-alt"></i><span>初次到院</span> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="Menu7-1.html">病患護理評估紀錄</a></li>
+            <li><a href="Menu7-2.html">新進透析患者個案紀錄</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-list-alt"></i><span>預約管理</span> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="Menu2-1.html">掛號預約</a></li>
+            <li><a href="Menu2-2.html">到診報到</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-list-alt"></i><span>病歷管理</span> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="PatientBG">病患基本資料維護</a></li>
+            <li><a href="MedicalHistory">藥物治療紀錄</a></li>
+            <li><a href="AnalysisHistory">血液透析治療紀錄</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-list-alt"></i><span>儀器藥品管理</span> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="Menu2-1.html">儀器妥善管理</a></li>
+            <li><a href="Menu2-2.html">藥品基本維護</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-list-alt"></i><span>行政管理</span> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="HR_BG">人事基本資料維護</a></li>
+            <li><a href="HR_Attend">出勤紀錄維護</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-list-alt"></i><span>匯出與匯入</span> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="AnalysisHistory">KIDIT匯出</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-list-alt"></i><span>報表管理</span> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="PatientBG">病患基本資料維護</a></li>
+            <li><a href="MedicalHistory">藥物治療紀錄</a></li>
+            <li><a href="AnalysisHistory">血液透析治療紀錄</a></li>
+          </ul>
+        </li>
+
+
+        <ul>
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /subnavbar-inner -->
+</div>
+<!-- /subnavbar -->
+<div class="main" style="margin-left:120px;">
+
+<table class="table table-striped table-bordered" style="width:900px;">
+  <tr><Td>
+    透析器：EL13Ｍ 透析液鈣濃度：2.5<br>
+    透析總額： HD<Br>
+    抗凝劑：Heparin<br>
+    初劑量：250 u ， 維持劑量 125 u/小時 ， 外循量：2000 u<br>
+    改變dose原因：<br>
+    醫師簽名：李明明<bR>
+  </td><Td>
+    透析時間：0710開始，1110結束，共4小時<br>
+    血壓紀錄：157/82(躺)<br>
+    體種記錄：開始58.8KG，結束56.7KG<br>
+    標準體重：56.6KG<br>
+    預定脫水：2.2KG，面板脫水：2.1KG，實際脫水：2.1KG<br>
+  </td></tr>
+  <tr><td colspan="2">
+    血管通路：針號：16Fr/17Fr<br>
+            左/A-V Fistula<br>
+  </td>
+</tr>
+<tr valign=top><td colspan="2">
+  抽血項目：無<br>
+</td>
+</tr>
+<tr><td valign=top>
+  病情紀錄<br><br><br><br><bR>
+</td>
+<td>
+透前觀察<br>
+體溫：36度Ｃ /
+意識：清醒 /
+呼吸：平順 /
+水腫：有+ /
+脫水量：-<br>
+傷口：無 /
+病人跌倒主述：無<br><br>
+<spab style="align=right">維護</span>
+</td>
+</tr>
+</table>
+<div style="height:200px; overflow:auto;">
+<table class="table table-striped table-bordered" style="width:900px;">
+<thead>
+  <th>時間</th>
+  <th>血壓</th>
+  <th>脈搏</th>
+  <th>血流速</th>
+  <th>靜脈壓</th>
+  <th>膜上壓</th>
+  <th>URF</th>
+  <th>溫度傳導度</th>
+  <th>肝素量</th>
+  <th>HDF/Vinf</th>
+  <th>特殊情況與處置</th>
+  </th>
+</thead>
+<tbody>
+<tr>
+  <td>0710</td>
+  <td>170/85</td>
+  <td>75</td>
+  <td>250</td>
+  <td>89</td>
+  <td>25</td>
+  <td>0.54/-</td>
+  <td>36.5/40</td>
+  <td>2</td>
+  <td>-</td>
+  <td>HD無前台 at1000 HD過程平順(編輯者：王大明)<br> [<a href="javascript:window.open('w1.html', 'W1', config='height=500,width=500');">編輯</a>]</td>
+  <td></td>
+</tr>
+<tr>
+  <td>0715</td>
+  <td>170/85</td>
+  <td>75</td>
+  <td style="background:red;color:white">250</td>
+  <td>89</td>
+  <td>25</td>
+  <td>0.54/-</td>
+  <td>36.5/40</td>
+  <td>2</td>
+  <td>-</td>
+  <td>[編輯]</td>
+  <td></td>
+</tr>
+<tr>
+  <td>0720</td>
+  <td>170/85</td>
+  <td>75</td>
+  <td>250</td>
+  <td>89</td>
+  <td>25</td>
+  <td>0.54/-</td>
+  <td>36.5/40</td>
+  <td>2</td>
+  <td>-</td>
+  <td>[編輯]</td>
+  <td></td>
+</tr>
+<tr>
+  <td>0725</td>
+  <td>170/85</td>
+  <td>75</td>
+  <td>250</td>
+  <td>89</td>
+  <td>25</td>
+  <td>0.54/-</td>
+  <td>36.5/40</td>
+  <td>2</td>
+  <td>-</td>
+  <td>[編輯]</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<table class="table table-striped table-bordered" style="width:900px;">
+  <tr><Td>
+    EPO:2000u, NESP:_mcg, B-complex:_ml, Vit B12:_ml, Vit C:_ml, Calcijex.Calsure:_ug,
+      鐵劑：_mg, 其他:<br>
+      輸血：總額：_單位,反應：_,輸血者：_<br>
+    </td></tr><table>
+
+臨時治療紀錄[<a href="javascript:window.open('w1.html', 'W1', config='height=500,width=500');">編輯</a>]
+<table class="table table-striped table-bordered" style="width:900px;">
+<thead>
+  <th>臨時治療</th>
+  <th width=150>醫師簽章</th>
+  <th width=150>時間</th>
+  <th width=150>執行者</th>
+  </thead
+  <tr>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+</tr>
+</table>
+
+<table class="table table-striped table-bordered" style="width:900px;">
+  <tr><Td width:50%>
+    透後觀察:Clear / 止血：正常<br>
+    PHD BP:195/95, at 1300 電聯P't, 表示SBP:130 mmHg 無不適<br>
+    </td>
+    <td>
+      檢驗報告：無
+      衛教資料：無
+    </td>
+  </tr><table>
+
+
+
+
+</div>
+<!-- /extra -->
+<div class="footer">
+  <div class="footer-inner">
+    <div class="container">
+      <div class="row">
+        <div class="span12"> &copy; 2013 <a href="http://www.egrappler.com/">Bootstrap Responsive Admin Template</a>. </div>
+        <!-- /span12 -->
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /footer-inner -->
+</div>
+<!-- /footer -->
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/excanvas.min.js"></script>
+<script src="js/chart.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.js"></script>
+<script language="javascript" type="text/javascript" src="js/full-calendar/fullcalendar.min.js"></script>
+
+<script src="js/base.js"></script>
+<script>
+
+        var lineChartData = {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [
+				{
+				    fillColor: "rgba(220,220,220,0.5)",
+				    strokeColor: "rgba(220,220,220,1)",
+				    pointColor: "rgba(220,220,220,1)",
+				    pointStrokeColor: "#fff",
+				    data: [65, 59, 90, 81, 56, 55, 40]
+				},
+				{
+				    fillColor: "rgba(151,187,205,0.5)",
+				    strokeColor: "rgba(151,187,205,1)",
+				    pointColor: "rgba(151,187,205,1)",
+				    pointStrokeColor: "#fff",
+				    data: [28, 48, 40, 19, 96, 27, 100]
+				}
+			]
+
+        }
+
+        var myLine = new Chart(document.getElementById("area-chart").getContext("2d")).Line(lineChartData);
+
+
+        var barChartData = {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [
+				{
+				    fillColor: "rgba(220,220,220,0.5)",
+				    strokeColor: "rgba(220,220,220,1)",
+				    data: [65, 59, 90, 81, 56, 55, 40]
+				},
+				{
+				    fillColor: "rgba(151,187,205,0.5)",
+				    strokeColor: "rgba(151,187,205,1)",
+				    data: [28, 48, 40, 19, 96, 27, 100]
+				}
+			]
+
+        }
+
+        $(document).ready(function() {
+        var date = new Date();
+        var d = date.getDate();
+        var m = date.getMonth();
+        var y = date.getFullYear();
+        var calendar = $('#calendar').fullCalendar({
+          header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+          },
+          selectable: true,
+          selectHelper: true,
+          select: function(start, end, allDay) {
+            var title = prompt('Event Title:');
+            if (title) {
+              calendar.fullCalendar('renderEvent',
+                {
+                  title: title,
+                  start: start,
+                  end: end,
+                  allDay: allDay
+                },
+                true // make the event "stick"
+              );
+            }
+            calendar.fullCalendar('unselect');
+          },
+          editable: true,
+          events: [
+            {
+              title: 'All Day Event',
+              start: new Date(y, m, 1)
+            },
+            {
+              title: 'Long Event',
+              start: new Date(y, m, d+5),
+              end: new Date(y, m, d+7)
+            },
+            {
+              id: 999,
+              title: 'Repeating Event',
+              start: new Date(y, m, d-3, 16, 0),
+              allDay: false
+            },
+            {
+              id: 999,
+              title: 'Repeating Event',
+              start: new Date(y, m, d+4, 16, 0),
+              allDay: false
+            },
+            {
+              title: 'Meeting',
+              start: new Date(y, m, d, 10, 30),
+              allDay: false
+            },
+            {
+              title: 'Lunch',
+              start: new Date(y, m, d, 12, 0),
+              end: new Date(y, m, d, 14, 0),
+              allDay: false
+            },
+            {
+              title: 'Birthday Party',
+              start: new Date(y, m, d+1, 19, 0),
+              end: new Date(y, m, d+1, 22, 30),
+              allDay: false
+            },
+            {
+              title: 'EGrappler.com',
+              start: new Date(y, m, 28),
+              end: new Date(y, m, 29),
+              url: 'http://EGrappler.com/'
+            }
+          ]
+        });
+      });
+    </script><!-- /Calendar -->
+
+    <script>
+
+        var pieData = [
+    				{
+    				    value: 30,
+    				    color: "#F38630"
+    				},
+    				{
+    				    value: 50,
+    				    color: "#E0E4CC"
+    				},
+    				{
+    				    value: 100,
+    				    color: "#69D2E7"
+    				}
+
+    			];
+
+        var myPie = new Chart(document.getElementById("pie-chart").getContext("2d")).Pie(pieData);
+
+        var barChartData = {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [
+    				{
+    				    fillColor: "rgba(220,220,220,0.5)",
+    				    strokeColor: "rgba(220,220,220,1)",
+    				    data: [65, 59, 90, 81, 56, 55, 40]
+    				},
+    				{
+    				    fillColor: "rgba(151,187,205,0.5)",
+    				    strokeColor: "rgba(151,187,205,1)",
+    				    data: [28, 48, 40, 19, 96, 27, 100]
+    				}
+    			]
+
+        }
+
+        var myLine = new Chart(document.getElementById("bar-chart").getContext("2d")).Bar(barChartData);
+    	var myLine = new Chart(document.getElementById("bar-chart1").getContext("2d")).Bar(barChartData);
+    	var myLine = new Chart(document.getElementById("bar-chart2").getContext("2d")).Bar(barChartData);
+    	var myLine = new Chart(document.getElementById("bar-chart3").getContext("2d")).Bar(barChartData);
+
+    	</script>
+
+
+
+</body>
+</html>
