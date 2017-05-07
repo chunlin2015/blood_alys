@@ -100,7 +100,8 @@
           <ul class="dropdown-menu">
             <li><a href="Menu2-1">使用者管理</a></li>
             <li><a href="Menu2-1">權限管理</a></li>
-            <li><a href="UsualPharse.php">常用醫囑片語</a></li>
+            <li><a href="UsualPharse">常用醫囑片語</a></li>
+            <li><a herf="SpecialPharse">特別醫囑片語</a></li>
             <li><a href="AnalysisHistory">休假日設定</a></li>
           </ul>
         </li>
@@ -114,22 +115,31 @@
 <!-- /subnavbar -->
 <
 <div class="main" style="margin-left:120px;margin-right:120px;">
-<form name="form" method="post" action="class.crud.php">
+<form name="form" method="post" action="../public/class.crud.php">
 片語類別：
 <select>
   <option value="A01">緊急處置片語</option>
   <option value="A02">醫囑片語</option>
 </select>
-<input type=button value=查詢 />
-<input type=text value=如果新增，請輸入片語代碼>
-<input type=text value=如果新增，請輸入片語類別>
-<input type=button value=新增 />
+<input type="button" value="查詢" />
+<input type="text" placeholder="如果新增，請輸入片語代碼">
+<input type="text" placeholder="如果新增，請輸入片語類別">
+<input type="button" value="新增" />
 <table class="table table-hover" >
-  <tr><td width=200>分類</td><td>選項</td><td>動作</td></tr>
-  <tr><td>頭痛緊急處置</td><td>喝溫水;吃普拿疼;不管他</td><td><input type=button value=編輯 />&nbsp;<input type=button value=刪除 /></td></tr>
-  <tr><td>心律不整緊急處置</td><td>降低洗腎流速;吃藥</td><td><input type=button value=編輯 />&nbsp;<input type=button value=刪除 /></td></tr>
-  <tr><td><input type=text width=100%></td><td><input type=text value="個別選項請以 ; 區隔" width=100%></td><td><input type=button value=新增 /></td></tr>
+  <tr><td width=200>分類</td><td>選項</td> <td>動作</td></tr>
+  <tr><td>頭痛緊急處置</td>
+      <td>喝溫水;吃普拿疼;不管他</td>
+      <td><input type=button value=編輯 />&nbsp;<input type=button value=刪除 /></td>
+  </tr>
+  <tr>
+  <td>心律不整緊急處置</td>
+  <td>降低洗腎流速;吃藥</td>
+  <td><input type=button value=編輯 />&nbsp;<input type=button value=刪除 /></td></tr>
+  <tr>
+  <td><input type=text width=100%></td>
+  <td><input type=text value="個別選項請以 ; 區隔" width=100%></td><td><input type=button value=新增 /></td></tr>
 </table>
+</form>
 
 
 

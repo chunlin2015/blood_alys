@@ -15,15 +15,6 @@ return [
             'path' => __DIR__ . '/../logs/app.log',
             'level' => \Monolog\Logger::DEBUG,
         ],
-        'db' => [
-            'driver' => 'mysql',
-            'host' => 'localhost',
-            'database' => 'blood_analysis',
-            'username' => 'root',
-            'password' => 'chunlinpassword',
-            'charset'   => 'utf8',
-            'collation' => 'utf8_unicode_ci',
-            'prefix'    => '',
-        ]
+        'db' => json_decode(file_get_contents(__DIR__.'/db_secret.json'), true),
     ],
 ];

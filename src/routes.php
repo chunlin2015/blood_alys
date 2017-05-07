@@ -5,7 +5,7 @@ $app->get('/{name}', function ($request, $response, $args) {
     // Sample log message
     $this->logger->info("Slim-Skeleton '/' route");
 
-    $templateList = glob(__DIR__.'/../templates/*.html');
+    $templateList = glob(__DIR__.'/../templates/*.phtml');
     $resp = null;
 
     foreach($templateList as $value) {
@@ -21,9 +21,11 @@ $app->get('/{name}', function ($request, $response, $args) {
 });
 
 $app->get('/', function($req, $resp, $args) {
-     return $this->renderer->render($resp, 'index.html', $args);
+     return $this->renderer->render($resp, 'index.phtml', $args);
 });
-$app->get('/UsualPharse', function($req, $resp, $args) {
-     return $this->renderer->render($resp, 'UsualPharse.php', $args);
+
+$app->post('/curd', function($req, $resp, $args) {
+     
 });
+
 
