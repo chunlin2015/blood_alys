@@ -1,10 +1,1 @@
-{
-    "driver": "mysql",
-    "host": "localhost",
-    "database": "blood_analysis",
-    "username": "root",
-    "password": "chunlinpassword",
-    "charset": "utf8",
-    "collation": "utf8_unicode_ci",
-    "prefix": ""
-}
+
